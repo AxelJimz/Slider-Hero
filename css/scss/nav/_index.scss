@@ -1,0 +1,138 @@
+.nav {
+  width: 100%;
+  padding: 0 1rem;
+  background-color: map-get($palette, "black");
+}
+
+.nav__body {
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__body * {
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  z-index: 1000;
+}
+
+.nav__mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  img:nth-last-child(1) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__menu--active {
+  img:nth-child(1) {
+    display: none;
+  }
+
+  img:nth-last-child(1) {
+    display: block;
+  }
+}
+
+.nav__links {
+  position: absolute;
+  top: 46px;
+  left: -150%;
+  width: calc(100% - 52px);
+  display: block;
+  background-color: map-get($palette, "black");
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav__links--active {
+  left: 0;
+}
+
+.nav__icons {
+  position: absolute;
+  top: 53px;
+  right: -0.5rem;
+  display: block;
+  background-color: map-get($palette, "black");
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav__brand,
+.nav__link {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 14.4px;
+  letter-spacing: 1.2px;
+  color: map-get($palette, "white");
+  padding: 1rem;
+}
+
+.nav__brand {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.nav__link--active {
+  color: map-get($palette, "pink");
+}
+
+.nav__link:active {
+  color: map-get($palette, "pink");
+}
+
+.nav__icons {
+  li:active {
+    background-color: map-get($palette, "pink");
+  }
+}
+
+@media (hover: hover) {
+  .nav__link:hover {
+    color: map-get($palette, "pink");
+  }
+
+  .nav__icons {
+    li:hover {
+      background-color: map-get($palette, "pink");
+    }
+  }
+}

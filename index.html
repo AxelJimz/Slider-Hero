@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Hero</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <ul class="nav__body">
+            <!-- Nav Mobile -->
+            <li>
+                <ul class="nav__mobile">
+                    <li><a class="nav__brand" href="#">Brand</a></li>
+                    <li>
+                        <a class="nav__menu" href="#">
+                            <img src="assets/svg/menu.svg" alt="menu">
+                            <img src="assets/svg/menu-active.svg" alt="menu">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Nav Links -->
+            <li>
+                <ul class="nav__links">
+                    <li><a class="nav__link nav__link--active" href="#">Home</a></li>
+                    <li><a class="nav__link" href="#">Blog</a></li>
+                    <li><a class="nav__link" href="#">Shop</a></li>
+                    <li><a class="nav__link" href="#">Gallery</a></li>
+                    <li><a class="nav__link" href="#">Contact Us</a></li>
+                </ul>
+            </li>
+            <!-- Nav Icons -->
+            <li>
+                <ul class="nav__icons">
+                    <li>
+                        <a class="nav__link nav__link--icon" href="#">
+                            <img src="assets/svg/search.svg" alt="search">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--icon" href="#">
+                            <img src="assets/svg/shopping.svg" alt="shopping">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--icon" href="#">
+                            <img src="assets/svg/user.svg" alt="user">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Hero -->
+    <main>
+        <section class="hero">
+            <div class="swiper mySwiper">
+                <!-- Swiper -->
+                <div class="swiper-wrapper">
+                  <!-- Slider 1 -->
+                  <div class="swiper-slide">
+                    <div>
+                        <h1>
+                            FAN FAVE
+                            <br>
+                            LIPPIES IN NEW,
+                            <br>
+                            SUPER RICH
+                            <br>
+                            COLOR
+                        </h1>
+                        <button>DISCOVER NOW</button>
+                    </div>
+                  </div>
+                  <!-- Slider 2 -->
+                  <div class="swiper-slide swiper-slide--two">
+                    <div>
+                        <h1>
+                            BEST MAKEUP
+                            <br>
+                            SECRETS &
+                            <br>
+                            LOOKS FOR
+                            <br>
+                            A DATE NIGHT
+                        </h1>
+                        <button>DISCOVER NOW</button>
+                    </div>
+                  </div>
+                  <!-- Slider 3 -->
+                  <div class="swiper-slide swiper-slide--three">
+                    <div>
+                        <h1>
+                            BEST TIPS
+                            <br>
+                            TO ACHIEVE
+                            <br>
+                            PERFECT
+                            <br>
+                            WINTER FACE
+                        </h1>
+                        <button>DISCOVER NOW</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+</html>

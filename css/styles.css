@@ -1,0 +1,394 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+.nav {
+  width: 100%;
+  padding: 0 1rem;
+  background-color: #252525;
+}
+
+.nav__body {
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__body * {
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  z-index: 1000;
+}
+
+.nav__mobile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.nav__menu img:nth-last-child(1) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
+.nav__menu--active img:nth-child(1) {
+  display: none;
+}
+
+.nav__menu--active img:nth-last-child(1) {
+  display: block;
+}
+
+.nav__links {
+  position: absolute;
+  top: 46px;
+  left: -150%;
+  width: calc(100% - 52px);
+  display: block;
+  background-color: #252525;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__links {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.nav__links--active {
+  left: 0;
+}
+
+.nav__icons {
+  position: absolute;
+  top: 53px;
+  right: -0.5rem;
+  display: block;
+  background-color: #252525;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__icons {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.nav__brand,
+.nav__link {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 14.4px;
+  letter-spacing: 1.2px;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav__brand {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.nav__link--active {
+  color: #fb9dab;
+}
+
+.nav__link:active {
+  color: #fb9dab;
+}
+
+.nav__icons li:active {
+  background-color: #fb9dab;
+}
+
+@media (hover: hover) {
+  .nav__link:hover {
+    color: #fb9dab;
+  }
+  .nav__icons li:hover {
+    background-color: #fb9dab;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 52px);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: center;
+  background-image: url("../assets/images/image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide--two {
+  background-image: url("../assets/images/image-2.jpg");
+}
+
+.swiper-slide--three {
+  background-image: url("../assets/images/image-3.png");
+}
+
+.swiper-slide div {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-slide div {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+.swiper-slide h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.swiper-slide button {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 14.4px;
+  letter-spacing: 1.2px;
+  background-color: #252525;
+  color: #fff;
+  cursor: pointer;
+}
+
+.swiper-slide button:active {
+  background-color: #fb9dab;
+}
+
+@media (hover: hover) {
+  .swiper-slide button:hover {
+    background-color: #fb9dab;
+  }
+}
+
+.swiper-slide--two h1,
+.swiper-slide--three h1 {
+  color: #252525;
+}
+/*# sourceMappingURL=styles.css.map */
